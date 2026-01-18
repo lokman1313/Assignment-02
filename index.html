@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Assignment-02</title>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="inter text-white">
+    <header id="head">
+      <nav class="flex justify-around items-center">
+        <h1 class="logo font-bold text-3xl">Tech<span>Wave</span></h1>
+        <ul class="flex gap-4">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
+        <button class="btn">
+          Subscribe
+          <img class="bg-transparent" src="image/ArrowRight.png" alt="" />
+        </button>
+      </nav>
+      <div class="banner">
+        <div class="image-part">
+          <div class="img-2">
+            <p>NEW</p>
+            <img src="image/hero-circle.png" alt="" />
+          </div>
+          <div class="img-3"><img src="image/microphone.png" /></div>
+        </div>
+        <div class="type-part">
+            <div class="type">
+                <h2 class="text-5xl font-bold text-center ">TechWave</h2>
+                <p class="text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+            <div class="hero-button">
+                <button class="b flex gap-2 p-4 justify-center items-center rounded-full "><img src="image/spotify.png" class="w-5 h-5">Listen on Spotify</button>
+                <button class="flex justify-center items-center gap-2 p-4 border border-green-400 rounded-full text-green-400"><img src="image/message.png" class="w-5 h-5"> Subscribe</button>
+            </div>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
+bg-gradient-to-tr from-[#fde800] via-[#ff06b4f6] to-[#9100F8]

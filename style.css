@@ -198,6 +198,22 @@ body p{
     border-radius: 20px;
     background-color: #2d144e;
 }
+/* challange part  */
+#challange{
+    padding: 20px 120px;
+}
+.cont-c{
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.icons img{
+    border:1px solid #4e4d4e;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
 @media screen and (max-width:576px) {
     #head nav ul{
         display: none;
@@ -233,7 +249,8 @@ body p{
 }
 .episodes-containar{
     display: block;
-    margin: 0 auto;
+    padding: 0;
+    /* margin: 0 auto; */
 }
 #Featured{
     padding:0px;
@@ -241,8 +258,21 @@ body p{
 #Featured h2{
     padding-top: 40px;
 }
+.f-t{
+    font-size: 2.3em;
+}
 .song-1{
-    width: auto;
+    max-width:fit-content;
     margin: 20px;
+}
+#challange{
+    padding: 10px;
+}
+.cont-c{
+    flex-direction: column;
+    text-align: center;
+}
+.icons{
+    justify-content: center;
 }
 }

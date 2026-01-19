@@ -52,7 +52,7 @@ body p{
     background-image: url(image/hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     background-size: contain;
     height:100vh;
 }    
@@ -182,6 +182,22 @@ body p{
     padding: 30px;
     border-radius: 20px;
 }
+/* song section  */
+#Featured{
+    padding: 100px;
+}
+.episodes-containar{
+    padding: 50px; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.song-1{
+    width:380px ;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #2d144e;
+}
 @media screen and (max-width:576px) {
     #head nav ul{
         display: none;
@@ -214,5 +230,19 @@ body p{
 #layout-section{
     padding: 20px;
     margin-top: 40px;
+}
+.episodes-containar{
+    display: block;
+    margin: 0 auto;
+}
+#Featured{
+    padding:0px;
+}
+#Featured h2{
+    padding-top: 40px;
+}
+.song-1{
+    width: auto;
+    margin: 20px;
 }
 }

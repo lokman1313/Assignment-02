@@ -331,3 +331,46 @@ body p{
         
     }
 }
+/* animetion part  */
+.ani{
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Inner background */
+.ani::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00ff88;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* Glow animation */
+.ani::after{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+        45deg,
+        #1c7705,
+        #c9970d,
+        #f3ecf8,
+        #e20a0a,
+        #fccb45,
+        #1347d4
+    );
+    background-size: 600%;
+    filter: blur(8px);
+    z-index: -2;
+    border-radius: 22px;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0%   { background-position: 0 0; }
+    50%  { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
